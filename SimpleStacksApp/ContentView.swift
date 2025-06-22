@@ -10,27 +10,29 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            // large globe purple image
+            // large orange globe image
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundStyle(.purple)
-            Text("Hello world!")
-            // large red text on yellow background
-            Text("It's summer time in Los Angeles")
-                .font(.largeTitle)
-                .foregroundColor(.red)
-                .padding(5)
-                .background(Color.yellow)
-                .cornerRadius(10)
-        HStack {
-            // small, orange dog image on a black background
-                Image(systemName: "dog")
-                .imageScale(.small)
-                .padding(2)
-                .background(Color.black)
+                .font(.system(size: 150))
                 .foregroundStyle(.orange)
+                .padding(25)
+            Text("Hello world!")
+                .padding(35)
+                .font(.system(size: 50))
+            // large yellow text on blue background
+            Text("It's summer time in Los Angeles")
+
+                .foregroundColor(.yellow)
+                .padding(10)
+                .background(Color.blue)
+                .cornerRadius(12)
+        HStack {
+            // extra large, green tree image
+            Image(systemName: "tree")
+                .font(.system(size: 150))
+                .foregroundStyle(.green)
+                .padding(3)
             }
-            
         }
         .padding()
     }
